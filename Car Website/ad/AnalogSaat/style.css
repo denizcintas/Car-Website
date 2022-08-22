@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    position: relative;
+    /* secs tam ortada olabilmesi için */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+
+
+}
+
+.clock {
+    height: 40rem;
+    width: 40rem;
+    border: 5px solid black;
+    border-radius: 50%;
+    background: url("https://cssanimation.rocks/images/posts/clocks/ios_clock.svg") center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+
+}
+
+.secs {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: .1rem;
+    height: 12rem;
+    background-color: tomato;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    transform-origin: 25% 0;
+    /* saat dönerken tam merkezede dönmesi iççin*/
+}
+
+.mins {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: .3rem;
+    height: 8rem;
+    background-color: black;
+    border-radius: 20px;
+    transform: translateX(-50%);
+    transform-origin: 25% 0;
+    /* saat dönerken tam merkezede dönmesi iççin*/
+}
+
+/* sol üsten yüzde elli ortaladığı için sağ köşe ta ortada olmuyor sola doğru çekiyoruz ki tam ortalansın*/
+
+
+.hours {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: .5rem;
+    height: 6rem;
+    transform: translateX(-50%);
+    background-color: black;
+    border-radius: 20px;
+    transform-origin: 25% 0;
+    /* saat dönerken tam merkezede dönmesi iççin*/
+
+}
+
+.dot {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1rem;
+    height: 1rem;
+    background-color: black;
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
